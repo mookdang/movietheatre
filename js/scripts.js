@@ -2,41 +2,12 @@
 
 function CustomerPurchases() {                   //Constructor function
   this.customerTickets = [];
-  this.currentId = 0;
 }
 
-CustomerPurchases.prototype.addCustomerTicket = function(customerTicket) {    //This function adds a new customer's tickets when called
-  customerTicket.id = this.assignId();                                         
-  this.customerTickets.push(customerTicket);
+CustomerPurchases.prototype.addCustomerTicket = function(customerTicket) {                                           
+  this.customerTickets.push(customerTicket);                                       //This function pushes the customer info into at's own array in line 4
 }
 
-CustomerPurchases.prototype.assignId = function(customerTicket) {
-  this.currentId += 1;
-  return this.currentId;
-}
-
-CustomerPurchases.prototype.findTicket = function(id) {
-  for (let i=0; i<this.customerTickets.length; i++) {
-    if (this.CustomerTickets[i]) {
-      if (this.customerTickets[i].id == id) {
-        return this.customerTickets[i];
-      }
-    }
-  };
-  return false;
-}
-
-CustomerPurchases.prototype.deleteTicket = function(id) {
-  for (let i=0; i<this.customerTickets.length; i++) {
-    if (this.CustomerTickets[i]) {
-      if (this.customerTickets[i].id == id) {
-        delete this.customerTickets[i];
-        return true;
-      }
-    }
-  };
-  return false;
-}
 
 CustomerPurchases.prototype.calcTicket = function(customerTicket) {
   if (rerun > 0) {
@@ -62,11 +33,13 @@ CustomerTicket.prototype.allTickets = function() {
   return "You selected " + this.rerun + "re-run tickets, " + this.matinee + " matinee tickets, and " + this.senior + " senior tickets.";
 }
 
-//UI Logic
+//USER INTERFACE LOGIC:
+
 let newCustomerEntry = new CustomerPurchases();
 
 function displayCustomerDetails(ticketToDisplay) {
-  let customerShoppingCart = $("#show-customer");
+  (".mattinee").text(this.mattinee);
+  })
 }
 
 $(document).ready(function() {
@@ -81,7 +54,8 @@ $(document).ready(function() {
     $("input#senior").val("");
     $("input#kids").val("");
     let newCustomer = new CustomerTicket(moviename, matinee, senior, kids);
-    newCustomerEntry.addCustomerTicket(newCustomer);
+    newCustomerEntry.addCustomerTicket(newCustomer);                               //this line calls the addCustomerTicket function, sending info in line 71 to line 7
     console.log(newCustomerEntry.customerTickets);
+    displayCustomerDeatils(newCustomerEntry);
   })
 })
