@@ -11,13 +11,13 @@ CustomerPurchases.prototype.addCustomerTicket = function(customerTicket) {
 
 CustomerPurchases.prototype.calcTicket = function(customerTicket) {
   if (rerun > 0) {
-    rerun * 8
+    let rerunPrice = rerun * 8
   }
   if (matinee > 0) {
-    matinee * 10
+    let matineePrice = matinee * 10
   }
   if (senior > 0) {
-    senior * 6
+    let seniorPrice = senior * 6
   }
 }
 
@@ -38,7 +38,7 @@ CustomerTicket.prototype.allTickets = function() {
 let newCustomerEntry = new CustomerPurchases();
 
 function displayCustomerDetails(ticketToDisplay) {
-  (".mattinee").text(this.mattinee);
+  $(".mattinee").text(this.mattinee);
   })
 }
 
