@@ -1,24 +1,26 @@
 # Movie Theatre Website
 
-#### User inputs a number to see a list of numbers printed back with unique conditions for some.
+#### This program calculates the price for movie tickets for the user.
 
-#### By: Janet Karpenske
+#### By: Mook Dang and Janet Karpenske
 
-##### The user inputs a number into the text box and clicks submit. A list of numbers from 0 up to the inputted number is returned, with numbers containing a 3 displaying as "Won't you be my neightbor?", those containing a 2 displaying as "Boop!" and those with a 1 as "Beep!", with respect to importance.
+##### The user can select a movie along with a sowtime and the number/type of tickets they would like, and the program will give them the total cost.
 
 ### Link to Site on Github Pages
-#### https://janetkarpenske.github.io/roboger/
+#### Not Applicable
 
 ### Specifications
 
 | Behavior | Input | Output |
 |----------|-------|--------|
-| The program returns a range of numbers from 0 to the inputted number | 4 | 1 2 3 4 |
-| The program returns False and displays an alert if no input is detected | | False |
-| The program returns False and displays an alert if a non-numerical character is detected | 3%2 or rW | False |
-| The program prints "Won't you be my neighbor?" if a number contains a 3 | 3 or 43 | "Won't you be my neighbor?" |
-| The program prints "Boop!" if a number contains a 2 | 2 or 21 | "Boop!" |
-| The program prints "Beep!" if a number contains a 1 | 1 or 41 | "Beep!" |
+| The program has a select field for the user to select the name of a movie | "Harry Potter" or "The Hunger Games" | none |
+| The program has an input field for the user to input the number of tickets they want | 4 | 4 Tickets |
+| The program has a select field for the user to input the type of tickets they want | "Matinee" | "Matinee" |
+| The program recieves user input and stores it in variables to be put in an object | "Harry Potter", "Matinee", "4" | Object = ["Harry Potter", "Matinee", "4"] |
+| The program has a function for each type of ticket which returns the cost of the number of tickets the want | 4 * 10 | $40 |
+| Program lists out everything that was purchased for the user | Your Shopping Cart: Matinee x 4 $40, Senior x 2 $16 | Total: $56 |
+| The program returns the total cost to the user | 4 Matinee @ $10 | Total: $40 |
+
 
 ## Setup/Installation Requirements
 
@@ -30,15 +32,12 @@
 No Known Bugs
 
 ## Support & Contact Details
-For additional information or to contact Janet Karpenske:
-cell: (971) 241-1160
-email: janetkarpenske@gmail.com
-LinkedIn: <https://www.linkedin.com/in/janet-karpenske/>
+For additional information or to contact Mook Dnag or Janet Karpenske
 
 ## Technologies Used
 A combination of HTML, CSS, and Javascript were used to create the page. Bootstrap and JQuery libraries were also used to style the page.
 
 ## Licensing
-Copyright (c) 2020 **_{Janet Karpenske}_**
+Copyright (c) 2020 **_{Mook Dang, Janet Karpenske}_**
 
 This software is licensed under MIT license.
