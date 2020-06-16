@@ -6,7 +6,7 @@ function CustomerPurchases() {                   //Constructor function
 }
 
 CustomerPurchases.prototype.addCustomerTicket = function(customerTicket) {    //This function adds a new customer's tickets when called
-  customerTicket.id = this.assignId();                                         //This line assigns the new customer an id and pushes it to the array in the CustomerPurchases Object
+  customerTicket.id = this.assignId();                                         
   this.customerTickets.push(customerTicket);
 }
 
