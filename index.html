@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Majestic Cinemas</title>
+  </head>
+  <body>
+  <div class="container">
+    <h1>Majestic Cinemas:</h1>
+    <div>
+      <form id="formOne">
+        <label for="moviename">Select a Movie:</label>
+        <select class="form-control" id="moviename">
+          <option>Harry Potter and the Order of the Phoenix (Throwback!)</option>
+          <option>Parasite</option>
+          <option>Trolls: World Tour</option>
+          <option>Mulan</option>
+          <option>How To Not Suck at Programming: A Horror Story</option>
+        </select>
+        <br>
+        <div class="form-group">
+          <label for="matinee">Enter number of Matinee Tickets:</label>
+          <input id="matinee" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="senior">Enter number of Senior Tickets:</label>
+          <input id="senior" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="kids">Enter number of Kids (under 12) Tickets:</label>
+          <input id="kids" class="form-control" type="text">
+        </div>
+
+        <button type="submit" class="btn">Add to Cart</button>
+      </form>
+
+      
+    
+      <div id="show-customer">
+        <h2>Your Shopping Cart:</h2>
+        <p>Mattinee: x<span class="mattinee"></span></p>
+        <p>Senior: x<span class="senior"></span></p>
+        <p>Kids: x<span class="kids"></span></p>
+        <div id="buttons">
+        </div>
+      </div>
+
+    </body>
+    </div>
+  </body> 
+  </html>

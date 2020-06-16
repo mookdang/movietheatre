@@ -61,3 +61,27 @@ function CustomerTicket(rerun, matinee, senior) { //These names will refer to th
 CustomerTicket.prototype.allTickets = function() {
   return "You selected " + this.rerun + "re-run tickets, " + this.matinee + " matinee tickets, and " + this.senior + " senior tickets.";
 }
+
+//UI Logic
+let newCustomerEntry = new CustomerPurchases();
+
+function displayCustomerDetails(ticketToDisplay) {
+  let customerShoppingCart = $("#show-customer");
+}
+
+$(document).ready(function() {
+  $("form#formOne").submit(function(event) {
+    event.preventDefault();
+    const movieName = $("#moviename").val();
+    const matinee = $("input#matinee").val();
+    const senior = $("input#senior").val();
+    const kids = $("input#kids").val();
+
+    $("input#matinee").val("");
+    $("input#senior").val("");
+    $("input#kids").val("");
+    let newCustomer = new CustomerTicket(moviename, matinee, senior, kids);
+    newCustomerEntry.addCustomerTicket(newCustomer);
+    console.log(newCustomerEntry.customerTickets);
+  })
+})

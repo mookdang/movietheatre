@@ -1,0 +1,12 @@
+html { background-color: rgb(203, 236, 255); margin-bottom: 50px;}
+
+body { margin-left:160px; margin-right:160px; background-color: rgb(253, 253, 253); color: rgb(0, 0, 0); padding: 35px; padding-bottom: 250px;}
+
+h1 { 
+  font-family:'MuseoModerno', cursive;
+  text-align: center;
+  padding: 35px;
+  font-size: 70px;
+  font-weight: 100;
+  text-shadow: 7px 7px 3px #008cff;
+}
